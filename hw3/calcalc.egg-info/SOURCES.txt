@@ -1,0 +1,9 @@
+README.md
+calcalc.py
+setup.py
+calcalc.egg-info/PKG-INFO
+calcalc.egg-info/SOURCES.txt
+calcalc.egg-info/dependency_links.txt
+calcalc.egg-info/entry_points.txt
+calcalc.egg-info/requires.txt
+calcalc.egg-info/top_level.txt
