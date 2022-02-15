@@ -44,7 +44,8 @@ def calculate(s, run_python=False, run_wolfram=False, return_float=True):
             return(ne.evaluate(s).item())
         except:
             return eval_wolfram(s, return_float)
-        
+
+    
 if __name__ == '__main__':
     import argparse
     
@@ -65,8 +66,7 @@ if __name__ == '__main__':
                         dest='run_wolfram',
                         help='Send to wolfram?')
     # add versioning
-    parser.add_argument('--version', action='version', version='%(prog)s 1.0')
-
+    parser.add_argument('--version', action='version', version='%(prog)s 1.1')
     
     results = parser.parse_args()
     print(calculate(results.string, run_python=results.run_python, run_wolfram=results.run_wolfram))
