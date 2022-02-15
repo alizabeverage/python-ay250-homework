@@ -1,9 +1,0 @@
-LICENSE.txt
-README.md
-setup.py
-calcalc/abeverage_calculator.egg-info/PKG-INFO
-calcalc/abeverage_calculator.egg-info/SOURCES.txt
-calcalc/abeverage_calculator.egg-info/dependency_links.txt
-calcalc/abeverage_calculator.egg-info/entry_points.txt
-calcalc/abeverage_calculator.egg-info/requires.txt
-calcalc/abeverage_calculator.egg-info/top_level.txt
