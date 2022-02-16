@@ -29,5 +29,5 @@ jobs:
       - name: run pytest
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pytest
+          python -m pip install pytest numexpr
           pytest hw3/calcalc/CalCalc.py --verbose
