@@ -44,6 +44,22 @@ def calculate(s, run_python=False, run_wolfram=False, return_float=True):
             return(ne.evaluate(s).item())
         except:
             return eval_wolfram(s, return_float)
+        
+
+def test_1():
+    assert abs(4. - calculate('2**2')) < 0.001
+    
+def test_2():
+    assert type(calculate('2**2',return_float=True)) == float
+    
+def test_3():
+    assert abs(1e6 - calculate('one million')) < 0.01
+    
+def test_4():
+    assert abs(4. - calculate('2+2')) < 0.001
+    
+def test_5():
+    assert type(calculate('mass of a proton')) == str
 
     
 if __name__ == '__main__':

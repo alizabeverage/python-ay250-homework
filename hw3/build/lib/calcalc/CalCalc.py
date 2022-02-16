@@ -44,6 +44,23 @@ def calculate(s, run_python=False, run_wolfram=False, return_float=True):
             return(ne.evaluate(s).item())
         except:
             return eval_wolfram(s, return_float)
+        
+
+def test_1():
+    assert abs(4. - calculate('2**2')) < 0.001
+    
+def test_2():
+    assert isinstance(calculate('mass of the earth',return_float=True), float)
+    
+def test_3():
+    assert abs(1e6 - calculate('one million')) < 0.01
+    
+def test_4():
+    assert abs(4. - calculate('2+2')) < 0.001
+    
+def test_5():
+    print(type(calculate('2**2',return_float=False)))
+    assert isinstance(calculate('mass of the earth',return_float=False), str)
 
     
 if __name__ == '__main__':
@@ -66,7 +83,7 @@ if __name__ == '__main__':
                         dest='run_wolfram',
                         help='Send to wolfram?')
     # add versioning
-    parser.add_argument('--version', action='version', version='%(prog)s 1.0')
+    parser.add_argument('--version', action='version', version='%(prog)s 1.1')
     
     results = parser.parse_args()
     print(calculate(results.string, run_python=results.run_python, run_wolfram=results.run_wolfram))

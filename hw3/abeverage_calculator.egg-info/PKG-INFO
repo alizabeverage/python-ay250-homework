@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: abeverage-calculator
+Version: 1.4
+Summary: Evaluate string using python and/or wolfram
+Home-page: https://github.com/alizabeverage/python-ay250-homework/tree/main/hw3
+Author: Aliza Beverage
+Author-email: abeverage@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Hey! Please install my package using
+```bash
+pip install abeverage-calculator
+```
+
+## Then it can be run from the command line like:
+```bash
+calc -w "mass of earth"
+```
+
+## Or from python like:
+```python
+from calcalc.CalCalc import *
+calcualte('mass of earth')
+```
+
+
